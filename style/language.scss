@@ -1,0 +1,237 @@
+#header {
+    overflow: visible !important;
+}
+
+body #papa header#header .right-block nav.header-navigation ul.menu {
+    padding: 0 !important;
+}
+
+#left-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-language-wrapper {
+
+    .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+    }
+
+    .select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        font-size: 13px;
+        color: #000;
+        width: 96px;
+        height: 45px;
+        box-sizing: border-box;
+    }
+
+    .select-styled {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #212121;
+        color: #fff;
+        border: 1px solid #77C8D0;
+        font-weight: 700;
+        // background: #FFFFFF;
+        box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+        border-radius: 21px;
+        padding: 8px 15px;
+        transition: all 0.2s ease-in;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:after {
+            content: "";
+            width: 6px;
+            height: 10px;
+            position: absolute;
+            top: 17px;
+            right: 15px;
+            background: url(../img/select-arrow.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(-90deg);
+            transition: all 0.3s ease-in;
+        }
+
+        &:active,
+        &.active {
+            background-color: #212121;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            &:after {
+                transform: rotate(90deg);
+            }
+        }
+
+        .flag {
+            display: inline-block;
+            width: 15px;
+            height: 10px;
+            margin-right: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .default-flag {
+            background-image: url(../img/flag/russia-flag.png);
+        }
+
+        .flag-eng {
+            background-image: url(../img/flag/america-flag.png);
+        }
+
+        .flag-ukr {
+            background-image: url(../img/flag/ukraine-flag.png);
+        }
+
+        .flag-rus {
+            background-image: url(../img/flag/russia-flag.png);
+        }
+    }
+
+
+    .select-options {
+        display: none;
+        position: absolute;
+        font-size: 13px;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999999999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #212121;
+        // background-color: #fff;
+        box-shadow: 1px 5px 4px 5px rgba(0, 0, 0, 0.03);
+        border-bottom-left-radius: 21px;
+        border-bottom-right-radius: 21px;
+        overflow: hidden;
+
+
+        li {
+            margin: 0;
+            padding: 12px 0;
+            text-indent: 15px;
+            transition: all 0.1s ease-in;
+            color: #fff;
+            font-weight: 700;
+            // border-bottom: 1px solid #F5F5F7;
+            border-bottom: 1px solid #77C8D0;
+            border-left: 1px solid #77C8D0;
+            border-right: 1px solid #77C8D0;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom-left-radius: 21px;
+                border-bottom-right-radius: 21px;
+            }
+
+            &:hover {
+                color: #77C8D0;
+                // background: #00C3DA;
+            }
+
+            &[rel="hide"] {
+                display: none;
+            }
+
+            .flag {
+                width: 15px;
+                height: 10px;
+                display: inline-block;
+                position: relative;
+                top: 0px;
+                margin-right: 10px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .flag-rus {
+                background-image: url(../img/flag/russia-flag.png);
+            }
+
+            .flag-eng {
+                background-image: url(../img/flag/america-flag.png);
+            }
+
+            .flag-ukr {
+                background-image: url(../img/flag/ukraine-flag.png);
+            }
+        }
+    }
+}
+
+.registration-wrapper {
+    .choose-language-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+}
+
+.consultation-wrapper {
+    .choose-language-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .choose-language-wrapper {
+        .select {
+            height: 32px;
+            width: 85px;
+            padding: 8px 12px;
+            line-height: 14px;
+            font-size: 12px;
+        }
+
+        .select-styled .flag {
+            width: 15px;
+            height: 10px;
+            margin-right: 7px;
+        }
+
+        .select-styled:after {
+            top: 11px;
+        }
+
+        .select-options {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 883px) {
+    #mobile-menu {
+        .choose-language-wrapper {
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #mobile-menu {
+        .choose-language-wrapper {
+            padding-bottom: 15px;
+        }
+    }
+}

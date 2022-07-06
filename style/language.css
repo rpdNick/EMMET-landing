@@ -1,0 +1,243 @@
+#header {
+  overflow: visible !important;
+}
+
+body #papa header#header .right-block nav.header-navigation ul.menu {
+  padding: 0 !important;
+}
+
+#left-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose-language-wrapper .select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.choose-language-wrapper .select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  font-size: 13px;
+  color: #000;
+  width: 96px;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.choose-language-wrapper .select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #212121;
+  color: #fff;
+  border: 1px solid #77C8D0;
+  font-weight: 700;
+  -webkit-box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 21px;
+  padding: 8px 15px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose-language-wrapper .select-styled:after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  background: url(../img/select-arrow.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.choose-language-wrapper .select-styled:active, .choose-language-wrapper .select-styled.active {
+  background-color: #212121;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.choose-language-wrapper .select-styled:active:after, .choose-language-wrapper .select-styled.active:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.choose-language-wrapper .select-styled .flag {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.choose-language-wrapper .select-styled .default-flag {
+  background-image: url(../img/flag/russia-flag.png);
+}
+
+.choose-language-wrapper .select-styled .flag-eng {
+  background-image: url(../img/flag/america-flag.png);
+}
+
+.choose-language-wrapper .select-styled .flag-ukr {
+  background-image: url(../img/flag/ukraine-flag.png);
+}
+
+.choose-language-wrapper .select-styled .flag-rus {
+  background-image: url(../img/flag/russia-flag.png);
+}
+
+.choose-language-wrapper .select-options {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999999999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #212121;
+  -webkit-box-shadow: 1px 5px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 5px 4px 5px rgba(0, 0, 0, 0.03);
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+  overflow: hidden;
+}
+
+.choose-language-wrapper .select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 1px solid #77C8D0;
+  border-left: 1px solid #77C8D0;
+  border-right: 1px solid #77C8D0;
+  cursor: pointer;
+}
+
+.choose-language-wrapper .select-options li:last-child {
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.choose-language-wrapper .select-options li:hover {
+  color: #77C8D0;
+}
+
+.choose-language-wrapper .select-options li[rel="hide"] {
+  display: none;
+}
+
+.choose-language-wrapper .select-options li .flag {
+  width: 15px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.choose-language-wrapper .select-options li .flag-rus {
+  background-image: url(../img/flag/russia-flag.png);
+}
+
+.choose-language-wrapper .select-options li .flag-eng {
+  background-image: url(../img/flag/america-flag.png);
+}
+
+.choose-language-wrapper .select-options li .flag-ukr {
+  background-image: url(../img/flag/ukraine-flag.png);
+}
+
+.registration-wrapper .choose-language-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.consultation-wrapper .choose-language-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .choose-language-wrapper .select {
+    height: 32px;
+    width: 85px;
+    padding: 8px 12px;
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .choose-language-wrapper .select-styled .flag {
+    width: 15px;
+    height: 10px;
+    margin-right: 7px;
+  }
+  .choose-language-wrapper .select-styled:after {
+    top: 11px;
+  }
+  .choose-language-wrapper .select-options {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 883px) {
+  #mobile-menu .choose-language-wrapper {
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #mobile-menu .choose-language-wrapper {
+    padding-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=language.css.map */
