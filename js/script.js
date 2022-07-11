@@ -48,3 +48,29 @@ $(document).ready(function () {
         }
     });
 });
+
+let strOrange = document.querySelector('.slogan-orange'),
+    strGreen = document.querySelector('.slogan-green'),
+    strRed = document.querySelector('.slogan-red');
+
+window.ityped.init(strOrange, {
+    strings: ['Звоню сам'],
+    loop: false,
+    showCursor: false,
+    // startDelay: 100,
+    // onFinished: function () {
+    //     console.log(this)
+    // }
+})
+
+window.ityped.init(strGreen, {
+    strings: ['Принимаю звонки'],
+    loop: false,
+    showCursor: false,
+})
+
+window.ityped.init(strRed, {
+    strings: ['Слушаю и анализирую другие звонки'],
+    loop: false,
+    showCursor: false,
+})

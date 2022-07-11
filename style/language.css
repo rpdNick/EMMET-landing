@@ -118,6 +118,10 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
   background-image: url(../img/flag/russia-flag.png);
 }
 
+.choose-language-wrapper .select-styled .flag-tur {
+  background-image: url(../img/flag/turkey-flag.svg);
+}
+
 .choose-language-wrapper .select-options {
   display: none;
   position: absolute;
@@ -187,6 +191,10 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
   background-image: url(../img/flag/ukraine-flag.png);
 }
 
+.choose-language-wrapper .select-options li .flag-tur {
+  background-image: url(../img/flag/turkey-flag.svg);
+}
+
 .registration-wrapper .choose-language-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +246,9 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
 @media screen and (max-width: 430px) {
   #mobile-menu .choose-language-wrapper {
     padding-bottom: 15px;
+  }
+  .choose-language-wrapper .select-options li {
+    padding: 10px 0;
   }
 }
 /*# sourceMappingURL=language.css.map */

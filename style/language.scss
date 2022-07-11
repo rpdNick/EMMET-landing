@@ -102,6 +102,10 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
         .flag-rus {
             background-image: url(../img/flag/russia-flag.png);
         }
+
+        .flag-tur {
+            background-image: url(../img/flag/turkey-flag.svg);
+        }
     }
 
 
@@ -173,6 +177,10 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
             .flag-ukr {
                 background-image: url(../img/flag/ukraine-flag.png);
             }
+
+            .flag-tur {
+                background-image: url(../img/flag/turkey-flag.svg);
+            }
         }
     }
 }
@@ -233,5 +241,9 @@ body #papa header#header .right-block nav.header-navigation ul.menu {
         .choose-language-wrapper {
             padding-bottom: 15px;
         }
+    }
+
+    .choose-language-wrapper .select-options li {
+        padding: 10px 0;
     }
 }

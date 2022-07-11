@@ -159,6 +159,9 @@ body .page-main-container .what-emmet .slogan {
   font-family: "BetinaScript";
   font-size: 32px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 
 body .page-main-container .what-emmet .slogan.slogan-orange {
@@ -176,7 +179,19 @@ body .page-main-container .what-emmet .slogan.slogan-green {
 body .page-main-container .what-emmet .slogan.slogan-red {
   color: #E25241;
   bottom: 85px;
-  right: 448px;
+  left: 448px;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 body .page-main-container .what-emmet .what-emmet__txt {
@@ -410,7 +425,7 @@ body .page-main-container .capabilities .capabilities__items-box .capabilities__
 
 body .page-main-container .capabilities .capabilities__items-box .capabilities__item .capabilities__item-content {
   padding: 30px 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-transform: lowercase;

@@ -151,23 +151,35 @@ body {
                 font-family: $fontBetina;
                 font-size: 32px;
                 font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 3px solid;
 
                 &.slogan-orange {
                     color: #F19537;
                     top: 125px;
                     left: 341px;
+                    // animation: blink .5s step-end infinite alternate;
                 }
 
                 &.slogan-green {
                     color: #96C05B;
                     top: 190px;
                     right: 213px;
+                    // animation: blink .5s step-end infinite alternate;
                 }
 
                 &.slogan-red {
                     color: #E25241;
                     bottom: 85px;
-                    right: 448px;
+                    left: 448px;
+                    // animation: blink .5s step-end infinite alternate;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent
                 }
             }
 
@@ -377,7 +389,7 @@ body {
 
                     .capabilities__item-content {
                         padding: 30px 40px;
-                        font-weight: 300;
+                        font-weight: 400;
                         font-size: 14px;
                         line-height: 16px;
                         text-transform: lowercase;
@@ -683,6 +695,10 @@ body {
         font-weight: 700;
         display: none;
     }
+
+    // .ityped-cursor {
+    //     display: none;
+    // }
 
     /*Global styles end*/
 }
