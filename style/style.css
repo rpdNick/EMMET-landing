@@ -938,6 +938,7 @@ body .form-error {
   }
   body .page-main-container .what-emmet .slogan {
     font-size: 18px;
+    padding-top: 2px;
   }
   body .page-main-container .what-emmet .slogan.slogan-red {
     bottom: 50px;
